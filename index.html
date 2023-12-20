@@ -57,6 +57,21 @@
             color: #ffffff;
             font-weight: bold;
         }
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+        .about-section img {
+            width: 200px; /* Adjust as needed */
+            height: auto;
+            border-radius: 50%; /* Circular image */
+            margin-right: 20px;
+        }
+        .about-text {
+            flex-grow: 1;
+        }
     </style>
 </head>
 <body>
@@ -77,9 +92,15 @@
     </header>
 
     <div class="container">
-        <section id="about">
-            <h2>About Jeremy</h2>
-            <p>Ya Wei Tsai, commonly referred to as Jeremy, is a multifaceted professional with a solid academic background and a diverse range of work experiences. He holds a Bachelor's degree in Political Science, with a double major in Economics, from National Taiwan University. Jeremy's professional journey includes a role as a Data Operations Analyst at P.LEAGUE+, Taiwan's professional basketball league, where he honed his analytical skills. Currently, he is pursuing a Master's degree in Computer Science at the University of Chicago, further expanding his technical expertise. His personal website displays his resume, showcasing his proficiency in data analysis and software engineering. Jeremy is actively seeking career opportunities in Software Development, Data Analysis, and Data Engineering, eager to apply his skills in new and challenging environments.</p>
+        <section id="about" class="about-section">
+            <!-- Image placeholder -->
+            <img src="path_to_your_image.jpg" alt="Jeremy Tsai"> <!-- Replace with your image path or URL -->
+            
+            <!-- About text -->
+            <div class="about-text">
+                <h2>About Jeremy</h2>
+                <p>Ya Wei Tsai, commonly referred to as Jeremy, is a multifaceted professional with a solid academic background and a diverse range of work experiences. He holds a Bachelor's degree in Political Science, with a double major in Economics, from National Taiwan University. Jeremy's professional journey includes a role as a Data Operations Analyst at P.LEAGUE+, Taiwan's professional basketball league, where he honed his analytical skills. Currently, he is pursuing a Master's degree in Computer Science at the University of Chicago, further expanding his technical expertise. His personal website displays his resume, showcasing his proficiency in data analysis and software engineering. Jeremy is actively seeking career opportunities in Software Development, Data Analysis, and Data Engineering, eager to apply his skills in new and challenging environments.</p>
+            </div>
         </section>
     </div>
 </body>
