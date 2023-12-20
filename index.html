@@ -71,6 +71,46 @@
         .about-text {
             flex-grow: 1;
         }
+        .experience-section {
+            max-width: 800px; /* Set the max width for the experience section */
+            margin: 50px auto; /* Center the section with automatic margins */
+            padding: 20px;
+            background-color: #fff; /* White background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the box */
+        }
+        .experience-header {
+            font-size: 28px; /* Large font size for the header */
+            color: #333; /* Dark gray color for the text */
+            border-bottom: 2px solid #e1e1e1; /* Light gray bottom border */
+            padding-bottom: 10px; /* Space below the header text */
+            margin-bottom: 20px; /* Space below the header */
+        }
+        .experience-company {
+            font-size: 18px; /* Font size for the company name */
+            color: #333; /* Dark gray color */
+            margin-bottom: 5px; /* Space below the company name */
+        }
+        .experience-details {
+            color: #666; /* Medium gray for the details */
+            font-size: 16px; /* Slightly smaller font size for the details */
+            margin-bottom: 20px; /* Space below the details */
+        }
+        .experience-list {
+            list-style: inside disc; /* Bullet points inside the list */
+            margin-left: 20px; /* Indent the list */
+        }
+        .experience-tags {
+            margin-top: 10px; /* Space above the tags */
+        }
+        .experience-tag {
+            display: inline-block;
+            background-color: #e1e1e1; /* Light gray background for the tags */
+            color: #333; /* Dark gray color */
+            border-radius: 3px; /* Rounded corners for the tags */
+            padding: 3px 8px; /* Padding inside the tags */
+            margin-right: 5px; /* Space between tags */
+            font-size: 12px; /* Smaller font size for the tags */
+        }
     </style>
 </head>
 <body>
@@ -101,6 +141,30 @@
                 <p>Ya Wei Tsai, commonly referred to as Jeremy, is a multifaceted professional with a solid academic background and a diverse range of work experiences. He holds a Bachelor's degree in Political Science, with a double major in Economics, from National Taiwan University. Jeremy's professional journey includes a role as a Data Operations Analyst at P.LEAGUE+, Taiwan's professional basketball league, where he honed his analytical skills. Currently, he is pursuing a Master's degree in Computer Science at the University of Chicago, further expanding his technical expertise. His personal website displays his resume, showcasing his proficiency in data analysis and software engineering. Jeremy is actively seeking career opportunities in Software Development, Data Analysis, and Data Engineering, eager to apply his skills in new and challenging environments.</p>
             </div>
         </section>
+    </div>
+
+        <div class="experience-section">
+        <div class="experience-header">
+            Experience
+        </div>
+        <div class="experience-company">
+            P.LEAGUE+ (Taiwanese Professional Basketball League)
+        </div>
+        <div class="experience-details">
+            Data Operations Analyst | Sept 2022 - July 2023 | Taipei, Taiwan
+        </div>
+        <ul class="experience-list">
+            <li>Built players and referees' datasets using Synergy Stats and Python for teams and media.</li>
+            <li>Visualized player's performance and analyzed characteristics of different teams by K-means method using Python for media use and for teams to conduct advanced analysis.</li>
+            <li>Analyzed customer behavior using Python and Excel.</li>
+        </ul>
+        <div class="experience-tags">
+            <span class="experience-tag">Python</span>
+            <span class="experience-tag">Data Analysis</span>
+            <span class="experience-tag">Excel</span>
+            <span class="experience-tag">Synergy Stats</span>
+            <!-- Add more tags as needed -->
+        </div>
     </div>
 </body>
 </html>
