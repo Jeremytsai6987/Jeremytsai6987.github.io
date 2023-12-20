@@ -86,9 +86,16 @@
             margin-bottom: 20px; /* Space below the header */
         }
         .experience-company {
+            display: flex;
+            align-items: center; /* Align the logo with the company name vertically */
             font-size: 18px; /* Font size for the company name */
             color: #333; /* Dark gray color */
             margin-bottom: 5px; /* Space below the company name */
+        }
+        .experience-company img {
+            width: 40px; /* Set the width of the logo */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 10px; /* Space between the logo and the company name */
         }
         .experience-details {
             color: #666; /* Medium gray for the details */
@@ -143,11 +150,12 @@
         </section>
     </div>
 
-        <div class="experience-section">
+    <div class="experience-section">
         <div class="experience-header">
-            Experience
+            Professional Experience
         </div>
         <div class="experience-company">
+            <img src="pleague.jpg" alt="P.LEAGUE+ Logo"> <!-- Replace with the path to the logo -->
             P.LEAGUE+ (Taiwanese Professional Basketball League)
         </div>
         <div class="experience-details">
