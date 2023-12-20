@@ -118,6 +118,46 @@
             margin-right: 5px; /* Space between tags */
             font-size: 12px; /* Smaller font size for the tags */
         }
+        .education-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .education-header {
+            font-size: 28px;
+            color: #333;
+            border-bottom: 2px solid #e1e1e1;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+       .education-block {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* Space between education blocks */
+        }
+        .education-logo {
+            width: 50px; /* Adjust as needed */
+            height: auto;
+            margin-right: 15px; /* Space between logo and text */
+        }
+        .education-institution {
+            font-size: 18px;
+            color: #333;
+            /* If you want to keep the logos and text aligned at the top: */
+            align-self: flex-start;
+        }
+        .education-details {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .education-coursework {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -175,6 +215,59 @@
             <span class="experience-tag">Synergy Stats</span>
             <!-- Add more tags as needed -->
         </div>
+    </div>
+
+    <div class="education-section">
+        <div class="education-header">
+            Educations
+        </div>
+
+            <!-- Education block with logo for the University of Chicago -->
+            <div class="education-block">
+                <img src="uchicago.jpg" alt="University of Chicago Logo" class="education-logo">
+                <div>
+                    <div class="education-institution">
+                        The University of Chicago, Chicago, IL
+                    </div>
+                    <div class="education-details">
+                        M.S. in Computer Science (2023 - 2024)
+                    </div>
+                    <div class="education-coursework">
+                        Relevant Coursework: Java Programming, Algorithms, Introduction to Unix Systems, iOS Development, Cloud Computing, Distributed Systems
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-block">
+                <img src="ntu.jpg" alt="National Taiwan University Logo" class="education-logo">
+                <div>
+                    <div class="education-institution">
+                        National Taiwan University, Taipei, Taiwan
+                    </div>
+                    <div class="education-details">
+                        B.A. in Political Science (2017 - 2022)
+                        Double Major in Economics (2017 - 2022)
+
+                    </div>
+                    <div class="education-coursework">
+                        Relevant Coursework: Introduction to Computer, Python Programming, Statistics, Marketing Analytics, Econometrics, Using R for Data Analysis
+ and Machine Learning
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-block">
+                <img src="lu.jpg" alt="Lund University" class="education-logo">
+                <div>
+                    <div class="education-institution">
+                        Lund University, Lund, Sweden
+                    </div>
+                    <div class="education-details">
+                        Exchange Program in Social Science (2021 - 2022)
+                    </div>
+                </div>
+            </div>
+
     </div>
 </body>
 </html>
