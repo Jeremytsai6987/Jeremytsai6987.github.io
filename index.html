@@ -58,19 +58,18 @@
             font-weight: bold;
         }
         .about-section {
-            text-align: center; /* Center align the content */
+            display: flex;
+            align-items: center; /* Align items vertically in the center */
+            justify-content: start; /* Align items to the start of the section */
             padding: 20px 0;
         }
         .about-section img {
-            width: 300px; /* Increased width, adjust as needed */
+            width: 150px; /* Adjust as needed */
             height: auto;
-            margin-top: 20px; /* Add space above the image */
-            /* Removed border-radius to make the image rectangular */
+            margin-right: 20px; /* Space between image and text */
         }
         .about-text {
-            /* Styles for text section */
             flex-grow: 1;
-
         }
     </style>
 </head>
@@ -93,12 +92,13 @@
 
     <div class="container">
         <section id="about" class="about-section">
+            <!-- Image next to the text -->
+            <img src="JeremyTsai.jpg" alt="Jeremy Tsai"> <!-- Replace with your image path or URL -->
+
+            <!-- About text -->
             <div class="about-text">
                 <h2>About Jeremy</h2>
                 <p>Ya Wei Tsai, commonly referred to as Jeremy, is a multifaceted professional with a solid academic background and a diverse range of work experiences. He holds a Bachelor's degree in Political Science, with a double major in Economics, from National Taiwan University. Jeremy's professional journey includes a role as a Data Operations Analyst at P.LEAGUE+, Taiwan's professional basketball league, where he honed his analytical skills. Currently, he is pursuing a Master's degree in Computer Science at the University of Chicago, further expanding his technical expertise. His personal website displays his resume, showcasing his proficiency in data analysis and software engineering. Jeremy is actively seeking career opportunities in Software Development, Data Analysis, and Data Engineering, eager to apply his skills in new and challenging environments.</p>
-                
-                <!-- Image below the text -->
-                <img src="JeremyTsai.jpg" alt="Jeremy Tsai"> <!-- Replace with your image path or URL -->
             </div>
         </section>
     </div>
