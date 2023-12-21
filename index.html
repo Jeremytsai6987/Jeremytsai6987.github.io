@@ -58,16 +58,16 @@
             font-weight: bold;
         }
         .about-section {
-            display: flex;
-            align-items: center; /* Align items vertically in the center */
-            justify-content: start; /* Align items to the start of the section */
+            text-align: center; /* Center align the content */
             padding: 20px 0;
         }
         .about-section img {
             width: 150px; /* Adjust as needed */
             height: auto;
-            margin-right: 20px; /* Space between image and text */
+            border-radius: 50%; /* Optional: if you want a circular image */
+            margin-bottom: 20px; /* Space between image and text */
         }
+
         .about-text {
             flex-grow: 1;
         }
@@ -177,9 +177,9 @@
 
     <div class="container">
         <section id="about" class="about-section">
-            <!-- Image next to the text -->
-            <img src="JeremyTsai.jpg" alt="Jeremy Tsai"> <!-- Replace with your image path or URL -->
-
+            <!-- Centered image above the text -->
+            <img src="JeremyTsai.jpg" alt="Jeremy Tsai" class="profile-pic"> <!-- Replace with your image path or URL -->
+            
             <!-- About text -->
             <div class="about-text">
                 <h2>About Jeremy</h2>
