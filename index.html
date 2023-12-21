@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Ya-Wei (Jeremy) Tsai - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
         /* Your existing styles here */
-                /* Style definitions */
+        /* Style definitions */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -14,13 +15,16 @@
             background-color: #f4f4f4;
             color: #333;
         }
+
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
-            padding-bottom: 50px; /* Add bottom padding to the container */
+            padding-bottom: 50px;
+            /* Add bottom padding to the container */
             /* Rest of your styles */
         }
+
         header {
             background: #35424a;
             color: #ffffff;
@@ -28,48 +32,64 @@
             min-height: 70px;
             border-bottom: #e8491d 3px solid;
         }
+
         header a {
             color: #ffffff;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 16px;
         }
+
         header ul {
             padding: 0;
             list-style: none;
         }
+
         header li {
             float: left;
             display: inline;
             padding: 0 20px 0 20px;
         }
+
         header #branding {
             float: left;
         }
+
         header #branding h1 {
             margin: 0;
         }
+
         header nav {
             float: right;
             margin-top: 10px;
         }
-        header .highlight, header .current a {
+
+        header .highlight,
+        header .current a {
             color: #e8491d;
             font-weight: bold;
         }
+
         header a:hover {
             color: #ffffff;
             font-weight: bold;
         }
+
         .about-section {
-            text-align: center; /* Center align the content */
-            padding: 40px 0; /* Increase padding for visual appeal */
+            text-align: center;
+            /* Center align the content */
+            padding: 40px 0;
+            /* Increase padding for visual appeal */
             margin-bottom: 40px;
         }
+
         .about-section img {
-            width: 200px; /* Adjust width as needed */
-            height: auto; /* Maintain aspect ratio */
-            margin-bottom: 20px; /* Space between image and text */
+            width: 200px;
+            /* Adjust width as needed */
+            height: auto;
+            /* Maintain aspect ratio */
+            margin-bottom: 20px;
+            /* Space between image and text */
             /* Removed border-radius for a rectangle image */
         }
 
@@ -77,62 +97,101 @@
             flex-grow: 1;
             margin-bottom: 20px;
         }
+
         .experience-section {
-            max-width: 800px; /* Set the max width for the experience section */
-            margin: 50px auto; /* Center the section with automatic margins */
+            max-width: 800px;
+            /* Set the max width for the experience section */
+            margin: 50px auto;
+            /* Center the section with automatic margins */
             padding: 20px;
-            background-color: #fff; /* White background */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the box */
+            background-color: #fff;
+            /* White background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Soft shadow around the box */
             margin-bottom: 40px;
         }
+
         .experience-header {
-            font-size: 28px; /* Large font size for the header */
-            color: #333; /* Dark gray color for the text */
-            border-bottom: 2px solid #e1e1e1; /* Light gray bottom border */
-            padding-bottom: 10px; /* Space below the header text */
-            margin-bottom: 20px; /* Space below the header */
+            font-size: 28px;
+            /* Large font size for the header */
+            color: #333;
+            /* Dark gray color for the text */
+            border-bottom: 2px solid #e1e1e1;
+            /* Light gray bottom border */
+            padding-bottom: 10px;
+            /* Space below the header text */
+            margin-bottom: 20px;
+            /* Space below the header */
         }
+
         .experience-company {
             display: flex;
-            align-items: center; /* Align the logo with the company name vertically */
-            font-size: 18px; /* Font size for the company name */
-            color: #333; /* Dark gray color */
-            margin-bottom: 5px; /* Space below the company name */
+            align-items: center;
+            /* Align the logo with the company name vertically */
+            font-size: 18px;
+            /* Font size for the company name */
+            color: #333;
+            /* Dark gray color */
+            margin-bottom: 5px;
+            /* Space below the company name */
         }
+
         .experience-company img {
-            width: 40px; /* Set the width of the logo */
-            height: auto; /* Maintain aspect ratio */
-            margin-right: 10px; /* Space between the logo and the company name */
+            width: 40px;
+            /* Set the width of the logo */
+            height: auto;
+            /* Maintain aspect ratio */
+            margin-right: 10px;
+            /* Space between the logo and the company name */
         }
+
         .experience-details {
-            color: #666; /* Medium gray for the details */
-            font-size: 16px; /* Slightly smaller font size for the details */
-            margin-bottom: 20px; /* Space below the details */
+            color: #666;
+            /* Medium gray for the details */
+            font-size: 16px;
+            /* Slightly smaller font size for the details */
+            margin-bottom: 20px;
+            /* Space below the details */
         }
+
         .experience-list {
-            list-style: inside disc; /* Bullet points inside the list */
-            margin-left: 20px; /* Indent the list */
+            list-style: inside disc;
+            /* Bullet points inside the list */
+            margin-left: 20px;
+            /* Indent the list */
         }
+
         .experience-tags {
-            margin-top: 10px; /* Space above the tags */
+            margin-top: 10px;
+            /* Space above the tags */
         }
+
         .experience-tag {
             display: inline-block;
-            background-color: #e1e1e1; /* Light gray background for the tags */
-            color: #333; /* Dark gray color */
-            border-radius: 3px; /* Rounded corners for the tags */
-            padding: 3px 8px; /* Padding inside the tags */
-            margin-right: 5px; /* Space between tags */
-            font-size: 12px; /* Smaller font size for the tags */
+            background-color: #e1e1e1;
+            /* Light gray background for the tags */
+            color: #333;
+            /* Dark gray color */
+            border-radius: 3px;
+            /* Rounded corners for the tags */
+            padding: 3px 8px;
+            /* Padding inside the tags */
+            margin-right: 5px;
+            /* Space between tags */
+            font-size: 12px;
+            /* Smaller font size for the tags */
         }
+
         .education-section {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #fff; /* White background for the education section */
+            background-color: #fff;
+            /* White background for the education section */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 40px;
         }
+
         .education-header {
             font-size: 28px;
             color: #333;
@@ -140,25 +199,35 @@
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
+
         .education-block {
             display: flex;
-            align-items: center; /* Vertically center the content within each block */
+            align-items: center;
+            /* Vertically center the content within each block */
             margin-bottom: 20px;
         }
+
         .education-logo {
-            width: 40px; /* Adjust width as needed */
-            height: auto; /* Maintain aspect ratio */
-            margin-right: 10px; /* Space between logo and text */
+            width: 40px;
+            /* Adjust width as needed */
+            height: auto;
+            /* Maintain aspect ratio */
+            margin-right: 10px;
+            /* Space between logo and text */
         }
+
         .education-institution {
             font-size: 18px;
             color: #333;
-            margin-bottom: 0; /* Aligns the institution name with the top of the details */
+            margin-bottom: 0;
+            /* Aligns the institution name with the top of the details */
         }
+
         .education-details {
             font-size: 16px;
             color: #666;
         }
+
         .education-coursework {
             font-size: 14px;
             color: #666;
@@ -169,51 +238,71 @@
             padding: 20px 0;
             background-color: #fff;
             margin-top: 20px;
-            margin-bottom: 40px; /* Add bottom margin to the links section */
+            margin-bottom: 40px;
+            /* Add bottom margin to the links section */
             border-top: 2px solid #e1e1e1;
             /* Other styles remain unchanged */
         }
+
         .links-section h2 {
             margin-bottom: 10px;
         }
+
         .links a {
             margin: 0 10px;
-            color: #333; /* Icon color */
-            font-size: 24px; /* Icon size */
+            color: #333;
+            /* Icon color */
+            font-size: 24px;
+            /* Icon size */
         }
+
         .links a:hover {
-            color: #e8491d; /* Icon hover color */
+            color: #e8491d;
+            /* Icon hover color */
         }
-        
+
         .copyright-section {
             text-align: center;
             padding: 20px 0;
             font-size: 14px;
             color: #666;
-            margin-top: 20px; /* Adjust if more space is needed */
-            border-top: 1px solid #e1e1e1; /* Optional visual separator */
+            margin-top: 20px;
+            /* Adjust if more space is needed */
+            border-top: 1px solid #e1e1e1;
+            /* Optional visual separator */
         }
 
         /* Styles for tab content */
         .tab-content {
-            display: none; /* Initially hide all content */
+            display: none;
+            /* Initially hide all content */
         }
 
         /* Styles for iframe */
         .resume-section h2 {
-            text-align: center; /* Center align the title */
+            text-align: center;
+            /* Center align the title */
         }
 
         .resume-iframe {
-            width: 80%; /* Width of the iframe */
-            height: 1200px; /* Height of the iframe */
+            width: 80%;
+            /* Width of the iframe */
+            height: 1200px;
+            /* Height of the iframe */
             border: none;
-            display: block; /* Ensures the iframe is a block-level element */
-            margin: auto; /* Centers the iframe horizontally */
+            display: block;
+            /* Ensures the iframe is a block-level element */
+            margin: auto;
+            /* Centers the iframe horizontally */
         }
 
+        #Resume {
+            padding-top: 60px;
+            /* Increase padding at the top */
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -223,8 +312,10 @@
             <nav>
                 <ul>
                     <li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'About')">About</a></li>
-                    <li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'Resume')">Resume</a></li>
-                    <li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'Portfolio')">Portfolio</a></li>
+                    <li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'Resume')">Resume</a>
+                    </li>
+                    <li><a href="javascript:void(0);" class="tablinks"
+                            onclick="openTab(event, 'Portfolio')">Portfolio</a></li>
                     <!-- Other tabs -->
                 </ul>
             </nav>
@@ -236,138 +327,148 @@
         <div id="About" class="tab-content">
             <h2>About Me</h2>
             <!-- Content for About Me -->
-                    <section id="about" class="about-section">
-                        <!-- Centered rectangle image above the text -->
-                        <img src="JeremyTsai.jpg" alt="Jeremy Tsai" class="profile-pic"> <!-- Replace with your image path or URL -->
-                    
-                        <!-- About text -->
-                        <div class="about-text">
-                            <h2>About Jeremy</h2>
-                            <p>Ya Wei Tsai, commonly referred to as Jeremy, is a multifaceted professional with a solid academic background
-                                and a diverse range of work experiences. He holds a Bachelor's degree in Political Science, with a double
-                                major in Economics, from National Taiwan University. Jeremy's professional journey includes a role as a Data
-                                Operations Analyst at P.LEAGUE+, Taiwan's professional basketball league, where he honed his analytical
-                                skills. Currently, he is pursuing a Master's degree in Computer Science at the University of Chicago,
-                                further expanding his technical expertise. His personal website displays his resume, showcasing his
-                                proficiency in data analysis and software engineering. Jeremy is actively seeking career opportunities in
-                                Software Development, Data Analysis, and Data Engineering, eager to apply his skills in new and challenging
-                                environments.</p>
-                        </div>
-                        
-                    </section>
-                    <!-- Remaining sections follow -->
-                    <div class="experience-section">
-                        <div class="experience-header">
-                            Professional Experience
-                        </div>
-                        <div class="experience-company">
-                            <img src="pleague.jpg" alt="P.LEAGUE+ Logo"> <!-- Replace with the path to the logo -->
-                            P.LEAGUE+ (Taiwanese Professional Basketball League)
-                        </div>
-                        <div class="experience-details">
-                            Data Operations Analyst | Sept 2022 - July 2023 | Taipei, Taiwan
-                        </div>
-                        <ul class="experience-list">
-                            <li>Built players and referees' datasets using Synergy Stats and Python for teams and media.</li>
-                            <li>Visualized player's performance and analyzed characteristics of different teams by K-means method using
-                                Python for media use and for teams to conduct advanced analysis.</li>
-                            <li>Analyzed customer behavior using Python and Excel.</li>
-                        </ul>
-                        <div class="experience-tags">
-                            <span class="experience-tag">Python</span>
-                            <span class="experience-tag">Data Analysis</span>
-                            <span class="experience-tag">Machine Learning</span>
-                            <span class="experience-tag">Statistics</span>
-                            <span class="experience-tag">Excel</span>
-                            <span class="experience-tag">Synergy Stats</span>
-                            <!-- Add more tags as needed -->
-                        </div>
-                    
-                    
-                        <div class="education-section">
-                            <div class="education-header">Education</div>
-                    
-                            <!-- University of Chicago -->
-                            <div class="education-block">
-                                <img src="uchicago.jpg" alt="University of Chicago Logo" class="education-logo">
-                                <div>
-                                    <div class="education-institution">
-                                        The University of Chicago, Chicago, IL
-                                    </div>
-                                    <div class="education-details">
-                                        M.S. in Computer Science (2023 - 2024)
-                                    </div>
-                                    <div class="education-coursework">
-                                        Relevant Coursework: Java Programming, Algorithms, Introduction to Unix Systems, iOS Development,
-                                        Cloud Computing, Distributed Systems
-                                    </div>
-                                </div>
-                            </div>
-                    
-                            <!-- National Taiwan University -->
-                            <div class="education-block">
-                                <img src="ntu.jpg" alt="National Taiwan University Logo" class="education-logo">
-                                <div>
-                                    <div class="education-institution">
-                                        National Taiwan University, Taipei, Taiwan
-                                    </div>
-                                    <div class="education-details">
-                                        B.A. in Political Science (2017 - 2022)
-                                        Double Major in Economics (2017 - 2022)
-                                    </div>
-                                    <div class="education-coursework">
-                                        Relevant Coursework: Introduction to Computer, Python Programming, Statistics, Marketing Analytics,
-                                        Econometrics, Using R for Data Analysis and Machine Learning
-                                    </div>
-                                </div>
-                            </div>
-                    
-                            <!-- Lund University -->
-                            <div class="education-block">
-                                <img src="lu.jpg" alt="Lund University Logo" class="education-logo">
-                                <div>
-                                    <div class="education-institution">
-                                        Lund University, Lund, Sweden
-                                    </div>
-                                    <div class="education-details">
-                                        Exchange Program in Social Science (2021 - 2022)
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="links-section">
-                                <h2>Links</h2>
-                                <div class="links">
-                                    <a href="https://github.com/Jeremytsai6987" target="_blank"><i class="fab fa-github"></i></a>
-                                    <a href="jeremyyawei@uchicago.edu" target="_blank"><i class="fas fa-envelope"></i></a>
-                                    <a href="https://www.linkedin.com/in/yawei-jeremy/" target="_blank"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="copyright-section">
-                            <p>&copy; 2023 Ya-Wei (Jeremy) Tsai. All rights reserved.</p>
-                        </div>
-                    </div>
-                    
-                    </div>
-        </div>
+            <section id="about" class="about-section">
+                <!-- Centered rectangle image above the text -->
+                <img src="JeremyTsai.jpg" alt="Jeremy Tsai" class="profile-pic">
+                <!-- Replace with your image path or URL -->
 
-        <!-- Resume Section -->
+                <!-- About text -->
+                <div class="about-text">
+                    <h2>About Jeremy</h2>
+                    <p>Ya Wei Tsai, commonly referred to as Jeremy, is a multifaceted professional with a solid academic
+                        background
+                        and a diverse range of work experiences. He holds a Bachelor's degree in Political Science, with
+                        a double
+                        major in Economics, from National Taiwan University. Jeremy's professional journey includes a
+                        role as a Data
+                        Operations Analyst at P.LEAGUE+, Taiwan's professional basketball league, where he honed his
+                        analytical
+                        skills. Currently, he is pursuing a Master's degree in Computer Science at the University of
+                        Chicago,
+                        further expanding his technical expertise. His personal website displays his resume, showcasing
+                        his
+                        proficiency in data analysis and software engineering. Jeremy is actively seeking career
+                        opportunities in
+                        Software Development, Data Analysis, and Data Engineering, eager to apply his skills in new and
+                        challenging
+                        environments.</p>
+                </div>
+
+            </section>
+            <!-- Remaining sections follow -->
+            <div class="experience-section">
+                <div class="experience-header">
+                    Professional Experience
+                </div>
+                <div class="experience-company">
+                    <img src="pleague.jpg" alt="P.LEAGUE+ Logo"> <!-- Replace with the path to the logo -->
+                    P.LEAGUE+ (Taiwanese Professional Basketball League)
+                </div>
+                <div class="experience-details">
+                    Data Operations Analyst | Sept 2022 - July 2023 | Taipei, Taiwan
+                </div>
+                <ul class="experience-list">
+                    <li>Built players and referees' datasets using Synergy Stats and Python for teams and media.</li>
+                    <li>Visualized player's performance and analyzed characteristics of different teams by K-means
+                        method using
+                        Python for media use and for teams to conduct advanced analysis.</li>
+                    <li>Analyzed customer behavior using Python and Excel.</li>
+                </ul>
+                <div class="experience-tags">
+                    <span class="experience-tag">Python</span>
+                    <span class="experience-tag">Data Analysis</span>
+                    <span class="experience-tag">Machine Learning</span>
+                    <span class="experience-tag">Statistics</span>
+                    <span class="experience-tag">Excel</span>
+                    <span class="experience-tag">Synergy Stats</span>
+                    <!-- Add more tags as needed -->
+                </div>
+
+
+                <div class="education-section">
+                    <div class="education-header">Education</div>
+
+                    <!-- University of Chicago -->
+                    <div class="education-block">
+                        <img src="uchicago.jpg" alt="University of Chicago Logo" class="education-logo">
+                        <div>
+                            <div class="education-institution">
+                                The University of Chicago, Chicago, IL
+                            </div>
+                            <div class="education-details">
+                                M.S. in Computer Science (2023 - 2024)
+                            </div>
+                            <div class="education-coursework">
+                                Relevant Coursework: Java Programming, Algorithms, Introduction to Unix Systems, iOS
+                                Development,
+                                Cloud Computing, Distributed Systems
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- National Taiwan University -->
+                    <div class="education-block">
+                        <img src="ntu.jpg" alt="National Taiwan University Logo" class="education-logo">
+                        <div>
+                            <div class="education-institution">
+                                National Taiwan University, Taipei, Taiwan
+                            </div>
+                            <div class="education-details">
+                                B.A. in Political Science (2017 - 2022)
+                                Double Major in Economics (2017 - 2022)
+                            </div>
+                            <div class="education-coursework">
+                                Relevant Coursework: Introduction to Computer, Python Programming, Statistics, Marketing
+                                Analytics,
+                                Econometrics, Using R for Data Analysis and Machine Learning
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lund University -->
+                    <div class="education-block">
+                        <img src="lu.jpg" alt="Lund University Logo" class="education-logo">
+                        <div>
+                            <div class="education-institution">
+                                Lund University, Lund, Sweden
+                            </div>
+                            <div class="education-details">
+                                Exchange Program in Social Science (2021 - 2022)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="links-section">
+                        <h2>Links</h2>
+                        <div class="links">
+                            <a href="https://github.com/Jeremytsai6987" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="jeremyyawei@uchicago.edu" target="_blank"><i class="fas fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/yawei-jeremy/" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright-section">
+                    <p>&copy; 2023 Ya-Wei (Jeremy) Tsai. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    <!-- Resume Section -->
         <div id="Resume" class="tab-content">
             <h2>Resume</h2>
             <iframe src="Ya Wei Tsai CS Resume.pdf" class="resume-iframe"></iframe>
         </div>
 
-        <!-- Portfolio Section -->
+    <!-- Portfolio Section -->
         <div id="Portfolio" class="tab-content">
             <h2>Portfolio</h2>
-            <!-- Content for Portfolio -->
+        <!-- Content for Portfolio -->
         </div>
 
-        <!-- Other sections -->
+    <!-- Other sections -->
     </div>
 
     <script>
@@ -386,4 +487,5 @@
         }
     </script>
 </body>
+
 </html>
