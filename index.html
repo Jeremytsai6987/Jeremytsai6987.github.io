@@ -313,10 +313,8 @@
             <nav>
                 <ul>
                     <li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'About')">About</a></li>
-                    <li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'Resume')">Resume</a>
-                    </li>
-                    <li><a href="javascript:void(0);" class="tablinks"
-                            onclick="openTab(event, 'Portfolio')">Portfolio</a></li>
+                    <li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'Resume')">Resume</a></li>
+                    <li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'Portfolio')">Portfolio</a></li>
                     <!-- Other tabs -->
                 </ul>
             </nav>
@@ -486,6 +484,11 @@
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
         }
+
+        // Automatically open the About tab when the page loads
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector('.tablinks[onclick*="About"]').click();
+        });
     </script>
 </body>
 
