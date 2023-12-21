@@ -134,28 +134,26 @@
         }
         .education-block {
             display: flex;
-            align-items: center;
+            align-items: center; /* Vertically center the content within each block */
             margin-bottom: 20px;
         }
         .education-logo {
-            width: 40px; /* Set to match the experience company logo */
-            height: auto;
-            margin-right: 15px;
+            width: 40px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 10px; /* Space between logo and text */
         }
         .education-institution {
             font-size: 18px;
             color: #333;
-            align-self: flex-start;
+            margin-bottom: 0; /* Aligns the institution name with the top of the details */
         }
         .education-details {
             font-size: 16px;
             color: #666;
-            margin-bottom: 10px;
         }
         .education-coursework {
             font-size: 14px;
             color: #666;
-            margin-bottom: 20px;
         }
 
     </style>
@@ -217,57 +215,54 @@
         </div>
     </div>
 
-    <div class="education-section">
-        <div class="education-header">
-            Educations
+<div class="education-section">
+        <div class="education-header">Education</div>
+
+        <!-- University of Chicago -->
+        <div class="education-block">
+            <img src="uchicago.jpg" alt="University of Chicago Logo" class="education-logo">
+            <div>
+                <div class="education-institution">
+                    The University of Chicago, Chicago, IL
+                </div>
+                <div class="education-details">
+                    M.S. in Computer Science (2023 - 2024)
+                </div>
+                <div class="education-coursework">
+                    Relevant Coursework: Java Programming, Algorithms, Introduction to Unix Systems, iOS Development, Cloud Computing, Distributed Systems
+                </div>
+            </div>
         </div>
 
-            <!-- Education block with logo for the University of Chicago -->
-            <div class="education-block">
-                <img src="uchicago.jpg" alt="University of Chicago Logo" class="education-logo">
-                <div>
-                    <div class="education-institution">
-                        The University of Chicago, Chicago, IL
-                    </div>
-                    <div class="education-details">
-                        M.S. in Computer Science (2023 - 2024)
-                    </div>
-                    <div class="education-coursework">
-                        Relevant Coursework: Java Programming, Algorithms, Introduction to Unix Systems, iOS Development, Cloud Computing, Distributed Systems
-                    </div>
+        <!-- National Taiwan University -->
+        <div class="education-block">
+            <img src="ntu.jpg" alt="National Taiwan University Logo" class="education-logo">
+            <div>
+                <div class="education-institution">
+                    National Taiwan University, Taipei, Taiwan
+                </div>
+                <div class="education-details">
+                    B.A. in Political Science (2017 - 2022)
+                    Double Major in Economics (2017 - 2022)
+                </div>
+                <div class="education-coursework">
+                    Relevant Coursework: Introduction to Computer, Python Programming, Statistics, Marketing Analytics, Econometrics, Using R for Data Analysis and Machine Learning
                 </div>
             </div>
+        </div>
 
-            <div class="education-block">
-                <img src="ntu.jpg" alt="National Taiwan University Logo" class="education-logo">
-                <div>
-                    <div class="education-institution">
-                        National Taiwan University, Taipei, Taiwan
-                    </div>
-                    <div class="education-details">
-                        B.A. in Political Science (2017 - 2022)
-                        Double Major in Economics (2017 - 2022)
-
-                    </div>
-                    <div class="education-coursework">
-                        Relevant Coursework: Introduction to Computer, Python Programming, Statistics, Marketing Analytics, Econometrics, Using R for Data Analysis
- and Machine Learning
-                    </div>
+        <!-- Lund University -->
+        <div class="education-block">
+            <img src="lu.jpg" alt="Lund University Logo" class="education-logo">
+            <div>
+                <div class="education-institution">
+                    Lund University, Lund, Sweden
+                </div>
+                <div class="education-details">
+                    Exchange Program in Social Science (2021 - 2022)
                 </div>
             </div>
-
-            <div class="education-block">
-                <img src="lu.jpg" alt="Lund University" class="education-logo">
-                <div>
-                    <div class="education-institution">
-                        Lund University, Lund, Sweden
-                    </div>
-                    <div class="education-details">
-                        Exchange Program in Social Science (2021 - 2022)
-                    </div>
-                </div>
-            </div>
-
+        </div>
     </div>
 </body>
 </html>
