@@ -4,304 +4,10 @@
 <head>
     <title>Ya-Wei (Jeremy) Tsai - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <style>
-        /* Your existing styles here */
-        /* Style definitions */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding-bottom: 50px;
-            /* Add bottom padding to the container */
-            /* Rest of your styles */
-        }
-
-        header {
-            background: #35424a;
-            color: #ffffff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
-        }
-
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-
-        header #branding {
-            float: left;
-        }
-
-        header #branding h1 {
-            margin: 0;
-        }
-
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-
-        header .highlight,
-        header .current a {
-            color: #e8491d;
-            font-weight: bold;
-        }
-
-        header a:hover {
-            color: #ffffff;
-            font-weight: bold;
-        }
-
-        .about-section {
-            text-align: center;
-            /* Center align the content */
-            padding: 40px 0;
-            /* Increase padding for visual appeal */
-            margin-bottom: 40px;
-        }
-
-        .about-section img {
-            width: 200px;
-            /* Adjust width as needed */
-            height: auto;
-            /* Maintain aspect ratio */
-            margin-bottom: 20px;
-            /* Space between image and text */
-            /* Removed border-radius for a rectangle image */
-        }
-
-        .about-text {
-            flex-grow: 1;
-            margin-bottom: 20px;
-        }
-
-        .experience-section {
-            max-width: 800px;
-            /* Set the max width for the experience section */
-            margin: 50px auto;
-            /* Center the section with automatic margins */
-            padding: 20px;
-            background-color: #fff;
-            /* White background */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            /* Soft shadow around the box */
-            margin-bottom: 40px;
-        }
-
-        .experience-header {
-            font-size: 28px;
-            /* Large font size for the header */
-            color: #333;
-            /* Dark gray color for the text */
-            border-bottom: 2px solid #e1e1e1;
-            /* Light gray bottom border */
-            padding-bottom: 10px;
-            /* Space below the header text */
-            margin-bottom: 20px;
-            /* Space below the header */
-        }
-
-        .experience-company {
-            display: flex;
-            align-items: center;
-            /* Align the logo with the company name vertically */
-            font-size: 18px;
-            /* Font size for the company name */
-            color: #333;
-            /* Dark gray color */
-            margin-bottom: 5px;
-            /* Space below the company name */
-        }
-
-        .experience-company img {
-            width: 40px;
-            /* Set the width of the logo */
-            height: auto;
-            /* Maintain aspect ratio */
-            margin-right: 10px;
-            /* Space between the logo and the company name */
-        }
-
-        .experience-details {
-            color: #666;
-            /* Medium gray for the details */
-            font-size: 16px;
-            /* Slightly smaller font size for the details */
-            margin-bottom: 20px;
-            /* Space below the details */
-        }
-
-        .experience-list {
-            list-style: inside disc;
-            /* Bullet points inside the list */
-            margin-left: 20px;
-            /* Indent the list */
-        }
-
-        .experience-tags {
-            margin-top: 10px;
-            /* Space above the tags */
-        }
-
-        .experience-tag {
-            display: inline-block;
-            background-color: #e1e1e1;
-            /* Light gray background for the tags */
-            color: #333;
-            /* Dark gray color */
-            border-radius: 3px;
-            /* Rounded corners for the tags */
-            padding: 3px 8px;
-            /* Padding inside the tags */
-            margin-right: 5px;
-            /* Space between tags */
-            font-size: 12px;
-            /* Smaller font size for the tags */
-        }
-
-        .education-section {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            /* White background for the education section */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-        }
-
-        .education-header {
-            font-size: 28px;
-            color: #333;
-            border-bottom: 2px solid #e1e1e1;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        .education-block {
-            display: flex;
-            align-items: center;
-            /* Vertically center the content within each block */
-            margin-bottom: 20px;
-        }
-
-        .education-logo {
-            width: 40px;
-            /* Adjust width as needed */
-            height: auto;
-            /* Maintain aspect ratio */
-            margin-right: 10px;
-            /* Space between logo and text */
-        }
-
-        .education-institution {
-            font-size: 18px;
-            color: #333;
-            margin-bottom: 0;
-            /* Aligns the institution name with the top of the details */
-        }
-
-        .education-details {
-            font-size: 16px;
-            color: #666;
-        }
-
-        .education-coursework {
-            font-size: 14px;
-            color: #666;
-        }
-
-        .links-section {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #fff;
-            margin-top: 20px;
-            margin-bottom: 40px;
-            /* Add bottom margin to the links section */
-            border-top: 2px solid #e1e1e1;
-            /* Other styles remain unchanged */
-        }
-
-        .links-section h2 {
-            margin-bottom: 10px;
-        }
-
-        .links a {
-            margin: 0 10px;
-            color: #333;
-            /* Icon color */
-            font-size: 24px;
-            /* Icon size */
-        }
-
-        .links a:hover {
-            color: #e8491d;
-            /* Icon hover color */
-        }
-
-        .copyright-section {
-            text-align: center;
-            padding: 20px 0;
-            font-size: 14px;
-            color: #666;
-            margin-top: 20px;
-            /* Adjust if more space is needed */
-            border-top: 1px solid #e1e1e1;
-            /* Optional visual separator */
-        }
-
-        /* Styles for tab content */
-        .tab-content {
-            display: none;
-            /* Initially hide all content */
-        }
-
-        /* Styles for iframe */
-        .resume-section h2 {
-            text-align: center;
-            /* Center align the title */
-        }
-
-        .resume-iframe {
-            width: 80%;
-            /* Width of the iframe */
-            height: 1200px;
-            /* Height of the iframe */
-            border: none;
-            display: block;
-            /* Ensures the iframe is a block-level element */
-            margin: auto;
-            /* Centers the iframe horizontally */
-        }
-
-        #Resume {
-            padding-top: 60px;
-            /* Increase padding at the top */
-        }
-    </style>
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -313,9 +19,10 @@
             <nav>
                 <ul>
                     <li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'About')">About</a></li>
-                    <li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'Resume')">Resume</a></li>
-                    <li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'Portfolio')">Portfolio</a></li>
-                    <!-- Other tabs -->
+                    <li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'Resume')">Resume</a>
+                    </li>
+                    <li><a href="javascript:void(0);" class="tablinks"
+                            onclick="openTab(event, 'Portfolio')">Portfolio</a></li>
                 </ul>
             </nav>
         </div>
@@ -324,54 +31,57 @@
     <div class="container">
         <!-- About Section -->
         <div id="About" class="tab-content">
-            <h2>About Me</h2>
-            <!-- Content for About Me -->
             <section id="about" class="about-section">
-                <!-- Centered rectangle image above the text -->
                 <img src="JeremyTsai.jpg" alt="Jeremy Tsai" class="profile-pic">
-                <!-- Replace with your image path or URL -->
-
-                <!-- About text -->
                 <div class="about-text">
                     <h2>About Jeremy</h2>
-                    <p>Ya Wei Tsai, commonly referred to as Jeremy, is a multifaceted professional with a solid academic
-                        background
-                        and a diverse range of work experiences. He holds a Bachelor's degree in Political Science, with
-                        a double
-                        major in Economics, from National Taiwan University. Jeremy's professional journey includes a
-                        role as a Data
-                        Operations Analyst at P.LEAGUE+, Taiwan's professional basketball league, where he honed his
-                        analytical
-                        skills. Currently, he is pursuing a Master's degree in Computer Science at the University of
-                        Chicago,
-                        further expanding his technical expertise. His personal website displays his resume, showcasing
-                        his
-                        proficiency in data analysis and software engineering. Jeremy is actively seeking career
-                        opportunities in
-                        Software Development, Data Analysis, and Data Engineering, eager to apply his skills in new and
-                        challenging
-                        environments.</p>
+                    <p>Ya-Wei (Jeremy) Tsai is a multifaceted professional with a solid academic background and diverse
+                        work experiences. He holds a Bachelor's degree in Political Science, with a double major in
+                        Economics, from National Taiwan University. Jeremy's professional journey includes a role as a
+                        Data Analyst at P.LEAGUE+, Taiwan's professional basketball league, where he honed his
+                        analytical skills. Currently, he is pursuing a Master's degree in Computer Science at the
+                        University of Chicago, further expanding his technical expertise. Jeremy is actively seeking
+                        career opportunities in Software Development, Data Analysis, and Data Engineering, eager to
+                        apply his skills in new and challenging environments.</p>
                 </div>
-
             </section>
-            <!-- Remaining sections follow -->
-            <div class="experience-section">
-                <div class="experience-header">
-                    Professional Experience
+            <!-- Links Section -->
+            <div class="links-section">
+                <h2>Links</h2>
+                <div class="links">
+                    <a href="https://github.com/Jeremytsai6987" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:jeremyyawei@uchicago.edu" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/yawei-jeremy/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
+            </div>
+        </div>
+
+        <!-- Resume Section -->
+        <div id="Resume" class="tab-content">
+            <div class="experience-section">
+                <div class="experience-header">Professional Experience</div>
                 <div class="experience-company">
-                    <img src="pleague.jpg" alt="P.LEAGUE+ Logo"> <!-- Replace with the path to the logo -->
-                    P.LEAGUE+ (Taiwanese Professional Basketball League)
+                    <img src="pleague.jpg" alt="P.LEAGUE+ Logo">
+                    P.LEAGUE+ (Taiwan Professional Basketball League)
                 </div>
                 <div class="experience-details">
-                    Data Operations Analyst | Sept 2022 - July 2023 | Taipei, Taiwan
+                    Data Analyst | Sept 2022 - July 2023 | Taipei, Taiwan
                 </div>
                 <ul class="experience-list">
-                    <li>Built players and referees' datasets using Synergy Stats and Python for teams and media.</li>
-                    <li>Visualized player's performance and analyzed characteristics of different teams by K-means
-                        method using
-                        Python for media use and for teams to conduct advanced analysis.</li>
-                    <li>Analyzed customer behavior using Python and Excel.</li>
+                    <li>Orchestrated the development of comprehensive player and referee datasets employing Synergy
+                        Stats and Python, yielding pivotal insights for tactical and strategic decision-making by teams,
+                        league authorities, and media representatives.</li>
+                    <li>Executed sophisticated K-means clustering to analyze player performance metrics and team
+                        dynamics; utilized Streamlit to create interactive visualizations, enhancing stakeholder
+                        understanding and engagement, and applied Excel for systematic data management, supporting
+                        nuanced analytical narratives.</li>
+                    <li>Conducted behavioral data analysis to distill customer trends and preferences, utilizing Python
+                        for data manipulation and Excel for data visualization, thereby informing customer engagement
+                        strategies and operational enhancements.</li>
+                    <li>Designed and managed a robust data pipeline using Python to streamline the aggregation and
+                        preprocessing of complex datasets, leading to a more efficient workflow and timely insights for
+                        strategic initiatives.</li>
                 </ul>
                 <div class="experience-tags">
                     <span class="experience-tag">Python</span>
@@ -380,94 +90,144 @@
                     <span class="experience-tag">Statistics</span>
                     <span class="experience-tag">Excel</span>
                     <span class="experience-tag">Synergy Stats</span>
-                    <!-- Add more tags as needed -->
                 </div>
+            </div>
 
-
-                <div class="education-section">
-                    <div class="education-header">Education</div>
-
-                    <!-- University of Chicago -->
-                    <div class="education-block">
-                        <img src="uchicago.jpg" alt="University of Chicago Logo" class="education-logo">
-                        <div>
-                            <div class="education-institution">
-                                The University of Chicago, Chicago, IL
-                            </div>
-                            <div class="education-details">
-                                M.S. in Computer Science (2023 - 2024)
-                            </div>
-                            <div class="education-coursework">
-                                Relevant Coursework: Java Programming, Algorithms, Introduction to Unix Systems, iOS
-                                Development,
-                                Cloud Computing, Distributed Systems
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- National Taiwan University -->
-                    <div class="education-block">
-                        <img src="ntu.jpg" alt="National Taiwan University Logo" class="education-logo">
-                        <div>
-                            <div class="education-institution">
-                                National Taiwan University, Taipei, Taiwan
-                            </div>
-                            <div class="education-details">
-                                B.A. in Political Science (2017 - 2022)
-                                Double Major in Economics (2017 - 2022)
-                            </div>
-                            <div class="education-coursework">
-                                Relevant Coursework: Introduction to Computer, Python Programming, Statistics, Marketing
-                                Analytics,
-                                Econometrics, Using R for Data Analysis and Machine Learning
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Lund University -->
-                    <div class="education-block">
-                        <img src="lu.jpg" alt="Lund University Logo" class="education-logo">
-                        <div>
-                            <div class="education-institution">
-                                Lund University, Lund, Sweden
-                            </div>
-                            <div class="education-details">
-                                Exchange Program in Social Science (2021 - 2022)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="links-section">
-                        <h2>Links</h2>
-                        <div class="links">
-                            <a href="https://github.com/Jeremytsai6987" target="_blank"><i
-                                    class="fab fa-github"></i></a>
-                            <a href="jeremyyawei@uchicago.edu" target="_blank"><i class="fas fa-envelope"></i></a>
-                            <a href="https://www.linkedin.com/in/yawei-jeremy/" target="_blank"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
+            <div class="education-section">
+                <div class="education-header">Education</div>
+                <div class="education-block">
+                    <img src="uchicago.jpg" alt="University of Chicago Logo" class="education-logo">
+                    <div>
+                        <div class="education-institution">The University of Chicago, Chicago, IL</div>
+                        <div class="education-details">M.S. in Computer Science (2023 - 2024)</div>
+                        <div class="education-coursework">Specialized in Cloud Computing, Machine Learning, Data
+                            Analytics, and Distributed Systems</div>
                     </div>
                 </div>
 
-                <div class="copyright-section">
-                    <p>&copy; 2023 Ya-Wei (Jeremy) Tsai. All rights reserved.</p>
+                <div class="education-block">
+                    <img src="ntu.jpg" alt="National Taiwan University Logo" class="education-logo">
+                    <div>
+                        <div class="education-institution">National Taiwan University, Taipei, Taiwan</div>
+                        <div class="education-details">B.A. in Political Science (2017 - 2022)</div>
+                        <div class="education-details">Double Major in Economics (2017 - 2022)</div>
+                        <div class="education-coursework">Concentrated in Statistics, Econometrics, and Machine
+                            Learning. Relevant coursework included Natural Language Processing (NLP), Deep Learning,
+                            CNNs, Self-Attention mechanisms, Transformer models, GANs, Generative AI.</div>
+                    </div>
+                </div>
+
+                <div class="education-block">
+                    <img src="lu.jpg" alt="Lund University Logo" class="education-logo">
+                    <div>
+                        <div class="education-institution">Lund University, Lund, Sweden</div>
+                        <div class="education-details">Exchange Program in Social Science (2021 - 2022)</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Resume</h2>
+            <iframe src="Ya Wei Tsai CS Resume.pdf" class="resume-iframe"></iframe>
+            <!-- Links Section -->
+            <div class="links-section">
+                <h2>Links</h2>
+                <div class="links">
+                    <a href="https://github.com/Jeremytsai6987" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:jeremyyawei@uchicago.edu" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/yawei-jeremy/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
-    <!-- Resume Section -->
-        <div id="Resume" class="tab-content">
-            <h2>Resume</h2>
-            <iframe src="Ya Wei Tsai CS Resume.pdf" class="resume-iframe"></iframe>
-        </div>
 
-    <!-- Portfolio Section -->
+        <!-- Portfolio Section -->
         <div id="Portfolio" class="tab-content">
             <h2>Portfolio</h2>
-        <!-- Content for Portfolio -->
-        </div>
+            <div class="portfolio-content">
+                <h3>PawClock</h3>
+                <ul>
+                    <li><strong>Developer Name:</strong> Ya-Wei Tsai</li>
+                    <li><strong>Application Name:</strong> PawClock</li>
+                    <li><strong>Date:</strong> 02/29/2024</li>
+                    <li>PawClock is an iOS application designed to assist pet owners in managing their pets' daily
+                        activities and meals, with an added interactive game component to engage both pets and owners.
+                    </li>
+                </ul>
+                <h4>Features</h4>
+                <ul>
+                    <li>Schedule and track pet meals and activities.</li>
+                    <li>Receive local notifications for upcoming meals and activities.</li>
+                    <li>Play an interactive game designed to entertain and engage.</li>
+                </ul>
+                <h4>Technologies and Frameworks Used</h4>
+                <ul>
+                    <li><strong>SwiftUI:</strong> Used for building the user interface with a declarative Swift syntax.
+                    </li>
+                    <li><strong>SpriteKit:</strong> Powers the interactive game component, providing tools for 2D
+                        sprite-based games.</li>
+                    <li><strong>Local Notifications:</strong> Utilized to alert users about their pet's scheduled meals
+                        and activities.</li>
+                </ul>
 
-    <!-- Other sections -->
+                <h3>Buy Earth a Coffee Application</h3>
+                <ul>
+                    <li>Developed a full-stack application using Next.js to enable user profile management and
+                        facilitate cryptocurrency donations.</li>
+                    <li>Implemented back-end functionalities in Node.js with MongoDB for data management, using Mongoose
+                        for database schema creation and data interaction.</li>
+                    <li>Integrated AWS S3 for file storage, handling file uploads and secure storage with public access
+                        configurations.</li>
+                    <li>Configured secure user authentication and session management using Next-Auth, enhancing
+                        application security and user experience.</li>
+                    <li>Employed Axios for HTTP requests to external payment gateway Cryptomus to process cryptocurrency
+                        transactions.</li>
+                    <li>Utilized React for front-end development, enhancing UI with custom components and managing state
+                        with hooks.</li>
+                </ul>
+                <h3>NuGraph: a Graph Neural Network (GNN) for neutrino physics event reconstruction (Partnering with
+                    Fermi Lab)</h3>
+                <ul>
+                    <li>Advanced NuGraph3 GNN architecture, optimizing data aggregation and message-passing for enhanced
+                        event-level predictions.</li>
+                    <li>Implemented a sawtooth mechanism for sequential node embedding updates, refining model accuracy
+                        and performance.</li>
+                    <li>Applied residual connections in NuGraph3, boosting robustness and feature refinement across
+                        iterative message-passing.</li>
+                    <li>Streamlined data pipelines with Python, enabling efficient data handling and supporting advanced
+                        analytical capabilities.</li>
+                </ul>
+                <h3>Genomic Annotations Service</h3>
+                <ul>
+                    <li>Led the design and development of a Genomic Annotations Service, a web service for gene data
+                        analysis utilizing Flask, Globus, and AWS cloud technologies including S3, EC2, SQS/SNS,
+                        DynamoDB, Lambda, and Step Machines.</li>
+                    <li>Built RESTful APIs with JavaScript and Python, managing data workflows and service integration
+                        to provide a robust user experience.</li>
+                </ul>
+                <h3>Generative AI Idea Validator for Circular Economy</h3>
+                <ul>
+                    <li>Pioneered the design and deployment of a cutting-edge AI-driven validation tool using OpenAI
+                        GPT-4 to analyze and categorize concepts within the circular economy sector.</li>
+                    <li>Integrated Retrieval-Augmented Generation (RAG) with GPT-4 to enhance the AI's ability to fuse
+                        retrieved information with generated content, ensuring the production of highly accurate and
+                        contextually relevant sustainability assessments.</li>
+                </ul>
+            </div>
+            <!-- Links Section -->
+            <div class="links-section">
+                <h2>Links</h2>
+                <div class="links">
+                    <a href="https://github.com/Jeremytsai6987" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:jeremyyawei@uchicago.edu" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/yawei-jeremy/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright-section">
+        <p>&copy; 2023 Ya-Wei (Jeremy) Tsai. All rights reserved.</p>
     </div>
 
     <script>
@@ -485,8 +245,7 @@
             evt.currentTarget.className += " active";
         }
 
-        // Automatically open the About tab when the page loads
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             document.querySelector('.tablinks[onclick*="About"]').click();
         });
     </script>
